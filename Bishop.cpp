@@ -15,7 +15,7 @@ Bishop::Bishop()
 Bishop::~Bishop()
 {
 }
-
+//////////Rule of the Bishop//////////
 void Bishop::move(int nPosA, int nPosB)
 {
 	unsigned int a, b;
