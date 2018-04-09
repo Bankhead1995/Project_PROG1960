@@ -14,16 +14,16 @@ int main()
 {
 	Pieces *p1;
 
-	p1 = new Bishop;
+	p1 = new Horse;
 
-	p1->setPos(1, 1);
+	p1->setPos(2, 2);
 
 	board(p1->returnPosX(),p1->returnPosY());
 	system("pause");
 
 	system("cls");
 
-	p1->move(5,4);
+	p1->move(3,2);
 	board(p1->returnPosX(), p1->returnPosY());
     return 0;
 }

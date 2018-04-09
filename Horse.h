@@ -14,8 +14,6 @@ public:
 	void move(int nPosA, int nPosB);
 private:
 
-	int nPosX[7];
-	int nPosY[7];
 };
 
 
