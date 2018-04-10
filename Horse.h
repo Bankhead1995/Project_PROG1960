@@ -5,6 +5,7 @@
 #ifndef HORSE_H_
 #define HORSE_H_
 #include"Pieces.h"
+#include<string>
 
 class Horse:public Pieces
 {
@@ -12,8 +13,9 @@ public:
 	Horse();
 	~Horse();
 	void move(int nPosA, int nPosB);
+	int returnID();
 private:
-
+	int ID ;
 };
 
 

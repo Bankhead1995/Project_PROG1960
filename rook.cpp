@@ -14,6 +14,8 @@ rook::rook()
 		nPosX[i] = 0;
 		nPosY[i] = 0;
 	}
+
+	ID = 4;//ADD BY Weixin
 }
 
 rook::~rook()
@@ -54,4 +56,9 @@ void rook::move(int PosX, int PosY)
 	{
 		cout << "Invalid move." << endl;
 	}
+}
+
+int rook::returnID()     //////////ADD BY Weixin 
+{
+	return ID;
 }

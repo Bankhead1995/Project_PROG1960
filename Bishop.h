@@ -12,8 +12,9 @@ public:
 	Bishop();
 	~Bishop();
 	void move(int nPosA, int nPosB);
+	int returnID();
 private:
-	
+	int ID;
 };
 
 

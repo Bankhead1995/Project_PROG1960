@@ -12,10 +12,13 @@ public:
 	rook();
 	~rook();
 	void move(int PosX, int PosY);
+	int returnID();
 
 private:
 	int nPosX[14];
 	int nPosY[14];
+
+	int ID;//ADD BY Weixin
 };
 
 

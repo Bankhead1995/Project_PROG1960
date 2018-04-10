@@ -4,17 +4,22 @@
 
 #include"Horse.h"
 #include<iostream>
-#include<cmath.h>
+#include<math.h>
 using namespace std;
 
 
 Horse::Horse()
 {
-	
+	ID = 5;
 }
 Horse::~Horse()
 {
 
+}
+
+int Horse::returnID()
+{
+	return ID;
 }
 
 
@@ -28,12 +33,12 @@ void Horse::move(int PosA,int PosB)
 		a = abs(PosA - returnPosX());
 		b = abs(PosB - returnPosY());
 
-		if (a==1 && b==2)
+		if ((a==1) && (b==2))
 		{
 			setPos(PosA, PosB);
 			cout << "Moving success!" << endl;
 		}
-		else if (a==2 && b==1)
+		else if ((a==2) && (b==1))
 		{
 			setPos(PosA, PosB);
 			cout << "Moving success!" << endl;

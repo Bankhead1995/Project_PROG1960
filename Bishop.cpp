@@ -11,6 +11,7 @@ using namespace std;
 
 Bishop::Bishop()
 {
+	ID = 3;
 }
 
 Bishop::~Bishop()
@@ -39,6 +40,9 @@ void Bishop::move(int nPosA, int nPosB)
 	{
 		cout << "Invalid Position!" << endl;
 	}
+}
 
-
+int Bishop::returnID()
+{
+	return ID;
 }

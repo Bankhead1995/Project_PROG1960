@@ -41,3 +41,8 @@ int Pieces::returnPosY()
 
 void Pieces::move(int PosA, int PosB)
 {}
+
+int Pieces::returnID()
+{
+	return 0;
+}
