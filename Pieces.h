@@ -1,3 +1,7 @@
+//Project: Chess
+//Date:2018/04/11
+//Author:Weixin Kong
+
 #ifndef PIECES_H_
 #define PIECES_H_
 
@@ -13,6 +17,7 @@ public:
 
 	virtual void move(int nPosA, int nPosB);
 	virtual int returnID();
+	virtual void deletePiece();
 
 private:
 	int player;

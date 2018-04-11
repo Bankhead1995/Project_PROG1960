@@ -13,7 +13,7 @@ public:
 	~rook();
 	void move(int PosX, int PosY);
 	int returnID();
-
+	void deletePiece();
 private:
 	int nPosX[14];
 	int nPosY[14];

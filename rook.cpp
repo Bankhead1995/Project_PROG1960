@@ -62,3 +62,9 @@ int rook::returnID()     //////////ADD BY Weixin
 {
 	return ID;
 }
+
+void rook::deletePiece()       //////////ADD BY Weixin 
+{
+	ID = 0;
+	setPos(NULL, NULL);
+}

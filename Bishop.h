@@ -1,5 +1,5 @@
 //Project: Chess
-//Date:2018/04/08
+//Date:2018/04/11
 //Author:Weixin Kong
 
 #ifndef BISHOP_H_
@@ -13,6 +13,7 @@ public:
 	~Bishop();
 	void move(int nPosA, int nPosB);
 	int returnID();
+	void deletePiece();
 private:
 	int ID;
 };

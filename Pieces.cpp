@@ -1,3 +1,7 @@
+//Project: Chess
+//Date:2018/04/11
+//Author:Weixin Kong
+
 #include"Pieces.h"
 #include"Horse.h"
 #include <iostream>
@@ -46,3 +50,6 @@ int Pieces::returnID()
 {
 	return 0;
 }
+
+void Pieces::deletePiece()
+{}

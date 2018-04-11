@@ -3,23 +3,23 @@
 //Author:Weixin Kong
 
 #include"Pieces.h"
-#include"Pawn1.h"
+#include"Pawn2.h"
 #include<math.h>
 #include<iostream>
 using namespace std;
-Pawn1::Pawn1()
+Pawn2::Pawn2()
 {
 	firstMoveFlag = 1;//define is this pawn is first move or not(ture=first move/false=not first)
 	ID = 6;
 }
 
-Pawn1::~Pawn1()
+Pawn2::~Pawn2()
 {
 }
 
-//////////Rule of the Pawn for player 1//////////
+//////////Rule of the Pawn for player 2//////////
 
-void Pawn1::move(int nPosA, int nPosB)
+void Pawn2::move(int nPosA, int nPosB)
 {
 	int x, y;
 	x = 0;
@@ -27,8 +27,9 @@ void Pawn1::move(int nPosA, int nPosB)
 
 	if (nPosA >= 0 && nPosA < 8 && nPosB >= 0 && nPosB < 8)
 	{
+
 		x = returnPosX();
-		y = returnPosY() - nPosB;
+		y = nPosB - returnPosY();
 
 		if (firstMoveFlag == 1)
 		{
@@ -61,12 +62,12 @@ void Pawn1::move(int nPosA, int nPosB)
 	}
 }
 
-int Pawn1::returnID()
+int Pawn2::returnID()
 {
 	return ID;
 }
 
-void Pawn1::deletePiece()
+void Pawn2::deletePiece()
 {
 	ID = 0;
 	setPos(NULL, NULL);

@@ -2,17 +2,17 @@
 //Date:2018/04/11
 //Author:Weixin Kong
 
-#ifndef PAWN1_H_
-#define PAWN1_H_
+#ifndef PAWN2_H_
+#define PAWN2_H_
 #include"Pieces.h"
 //////////since the pawn can not move backward, so it is really hard to define the pawn of different player are moving  backward or not//////////
-//////////Pawn1 is the pawn of player 1//////////
+//////////Pawn1 is the pawn of player 2//////////
 
-class Pawn1:public Pieces
+class Pawn2 :public Pieces
 {
 public:
-	Pawn1();
-	~Pawn1();
+	Pawn2();
+	~Pawn2();
 	void move(int nPosA, int nPosB);
 	int returnID();
 	void deletePiece();
@@ -20,5 +20,5 @@ private:
 	bool firstMoveFlag;
 	int ID;
 };
-#endif // !PAWN_H_
+#endif // !PAWN2_H_
 #pragma once

@@ -1,5 +1,5 @@
 //Project: Chess
-//Date:2018/04/08
+//Date:2018/04/11
 //Author:Weixin Kong
 
 #include"Horse.h"
@@ -20,6 +20,12 @@ Horse::~Horse()
 int Horse::returnID()
 {
 	return ID;
+}
+
+void Horse::deletePiece()
+{
+	ID = 0;
+	setPos(NULL, NULL);
 }
 
 

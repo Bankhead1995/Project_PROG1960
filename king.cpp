@@ -1,32 +1,31 @@
 //Project: Chess
-//Date:2018/04/11
-//Author:Weixin Kong
+//Date: 2018/04/10
+//Author: Adam Oliver
 
-#include"Bishop.h"
+#include"king.h"
 #include"Pieces.h"
 #include<iostream>
 #include<math.h>
 
 using namespace std;
 
-Bishop::Bishop()
+king::king()
 {
-	ID = 3;
+	ID = 1;
 }
 
-Bishop::~Bishop()
+king::~king()
 {
 }
 
-void Bishop::move(int nPosA, int nPosB)
+void king::move(int nPosA, int nPosB)
 {
 	unsigned int a, b;
 	if (nPosA >= 0 && nPosA < 8 && nPosB >= 0 && nPosB < 8)
 	{
 		a = abs(nPosA - returnPosX());
 		b = abs(nPosB - returnPosY());
-
-		if (a == b)
+		if (a == b == 1)
 		{
 			setPos(nPosA, nPosB);
 			cout << "Moving success!" << endl;
@@ -42,11 +41,12 @@ void Bishop::move(int nPosA, int nPosB)
 	}
 }
 
-int Bishop::returnID()
+int king::returnID()
 {
 	return ID;
 }
-void Bishop::deletePiece()
+
+void king::deletePiece() //////////ADD BY Weixin 
 {
 	ID = 0;
 	setPos(NULL, NULL);
